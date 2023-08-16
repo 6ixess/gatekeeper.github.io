@@ -26,7 +26,7 @@ p {
 .bg-image {
     background-image: url('../img/background.gif');
 
-    filter: blur(6px);
+    filter: blur(3px);
 
     position: absolute;
     top: 0px;
@@ -44,9 +44,6 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
   
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-    
     backdrop-filter: blur(10px);
     
     height: 35%;
@@ -104,40 +101,4 @@ p {
 
 .social-logo:hover {
     transform: scale(1.5);
-}
-
-.popup .popuptext {
-    opacity: 0%;
-    visibility: hidden;
-    position: fixed;
-
-    width: 150px;
-    padding: 8px;
-    bottom: 30%;
-    margin-left: -125px;
-    border-radius: 100px;
-
-    background-color: rgba(0, 0, 0, 0.10);
-    backdrop-filter: blur(5px);
-    
-    
-    color: #fff;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Roboto Mono', monospace;
-
-}
-
-.popup .anim {
-    animation: fadeIn 1s forwards, fadeOut 3s 1s forwards;
-}
-
-@keyframes fadeIn {
-    from {visibility: visible; opacity: 0;}
-    to {visibility: visible; opacity: 1;}
-}
-
-@keyframes fadeOut {
-    from {visibility: visible; opacity: 1;}
-    to {visibility: hidden; opacity: 0;}
 }
