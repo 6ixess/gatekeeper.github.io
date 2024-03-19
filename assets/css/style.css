@@ -24,8 +24,6 @@ p {
 }
 
 .bg-image {
-    background-image: url('../img/background.gif');
-
     filter: blur(3px);
 
     position: absolute;
