@@ -17,7 +17,6 @@ body {
      }
 }
 
-
 p {
   color: #fff;
   font-family: 'Roboto Mono', monospace;
@@ -54,9 +53,10 @@ p {
 .header {
     position: absolute;
     top: 15%;
+    left: 20%;
     
     text-align: center;
-    width: 100%;
+    width: 60%;
   
     padding: 0%;
     margin: 0%;
@@ -99,4 +99,25 @@ p {
 
 .social-logo:hover {
     transform: scale(1.5);
+}
+
+.header p {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
 }
