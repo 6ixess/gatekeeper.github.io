@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+body {
+    background-color: #000; 
+    
+    animation: fadeInAnimation ease-in 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+p {
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.bg-image {
+    filter: blur(3px);
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    backdrop-filter: blur(10px);
+    
+    height: 35%;
+    width: 90%;
+    max-width: 580px;
+    
+    border-radius: 5px;
+}
+
+.header {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    
+    text-align: center;
+    width: 60%;
+  
+    padding: 0%;
+    margin: 0%;
+}
+
+.maintext {
+    font-size: 2.5em;
+    padding: 0%;
+    margin: 0%;
+    padding-bottom: 5px;
+}
+
+.subtext {
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+.footer {
+    position: absolute;
+    bottom: 15%;
+  
+    width: 100%;
+  
+    /* center all images inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-logo {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    /* animation time */
+    transition: transform 0.2s;
+  
+    width: 40px;
+    height: 40px;
+}
+
+.social-logo:hover {
+    transform: scale(1.5);
+}
+
+.header p {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
